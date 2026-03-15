@@ -97,7 +97,7 @@ User → Agent LLM → AIUSD Core CLI → MCP Server → Execution Platform
 
 - **Local-first** — authentication tokens stored on-device (`~/.aiusd/`)
 - **Open source** — fully auditable skill code
-- **No inference cost** — does not consume platform AI tokens
+- **No inference cost** — bring your own LLM, no platform charges
 
 ## Core vs. Pro
 
@@ -105,7 +105,7 @@ User → Agent LLM → AIUSD Core CLI → MCP Server → Execution Platform
 |---|------|-----|
 | **Inference** | Client-side LLM | Managed backend agent |
 | **Interface** | Structured CLI commands | Natural language |
-| **AI tokens** | None | Uses platform tokens |
+| **Inference cost** | None — bring your own LLM | Included |
 | **Best for** | Developers building custom agents | End users and turnkey integrations |
 
 ## Links
