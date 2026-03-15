@@ -1,0 +1,22 @@
+{
+  "name": "aiusd-skills",
+  "version": "1.1.0",
+  "description": "Install AIUSD Core skill for OpenClaw / MCP: npx aiusd-skills install",
+  "type": "commonjs",
+  "bin": {
+    "aiusd-skills": "./bin/aiusd-skills.js"
+  },
+  "files": [
+    "bin/"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["aiusd", "skill", "mcp", "install"],
+  "author": "AIUSD",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/galpha-ai/aiusd-core.git"
+  }
+}
