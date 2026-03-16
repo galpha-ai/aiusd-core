@@ -1,5 +1,6 @@
 ---
 name: aiusd-core
+version: 1.0.1
 description: "AIUSD Core — structured trading tools and account management for AI agents. Use when user wants to buy/sell assets, check balances, stake, or manage positions."
 homepage: https://aiusd.ai
 license: MIT

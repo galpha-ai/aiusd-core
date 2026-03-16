@@ -26,10 +26,18 @@ npx skills add galpha-ai/aiusd-core -y -g
 
 ### OpenClaw
 
-Drag & drop the [.skill file](https://github.com/galpha-ai/aiusd-core/releases/latest/download/aiusd-core.skill) into your OpenClaw chat, or:
+Install from [ClawHub](https://clawhub.com):
 
 ```bash
-openclaw skill install aiusd-core.skill
+clawhub install aiusd-core
+```
+
+Or manually — download [SKILL.md](https://raw.githubusercontent.com/galpha-ai/aiusd-core/main/SKILL.md) into your skills directory:
+
+```bash
+mkdir -p ~/.openclaw/skills/aiusd-core
+curl -fsSL https://raw.githubusercontent.com/galpha-ai/aiusd-core/main/SKILL.md \
+  -o ~/.openclaw/skills/aiusd-core/SKILL.md
 ```
 
 ### npm
@@ -82,7 +90,7 @@ aiusd-core logout                # Sign out
 | Claude Code | `npx skills add galpha-ai/aiusd-core` |
 | Codex | `npx skills add galpha-ai/aiusd-core` |
 | Cursor | `npx skills add galpha-ai/aiusd-core` |
-| OpenClaw | `.skill` file or symlink |
+| OpenClaw | `clawhub install aiusd-core` |
 | GitHub Copilot | Symlink to `.github/skills/` |
 
 ## Architecture
