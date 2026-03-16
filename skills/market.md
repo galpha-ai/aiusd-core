@@ -3,7 +3,7 @@
 ## Commands
 | Command | Description |
 |---------|------------|
-| `aiusd market hot-tokens` | Trending tokens |
+| `aiusd-core market hot-tokens` | Trending tokens |
 
 ## Examples
-- "What tokens are trending?": `aiusd market hot-tokens`
+- "What tokens are trending?": `aiusd-core market hot-tokens`
