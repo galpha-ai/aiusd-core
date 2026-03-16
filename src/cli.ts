@@ -60,7 +60,7 @@ export class CLI {
 
   private setupCommands(): void {
     this.program
-      .name('aiusd')
+      .name('aiusd-core')
       .description('AIUSD Skills MCP Client using official TypeScript SDK')
       .version(PKG_VERSION)
       .option('-s, --server <url>', 'MCP server URL', this.defaultServerUrl)
@@ -493,7 +493,7 @@ export class CLI {
       url,
       session_id: session.session_id,
       expires_at: session.expires_at,
-      message: 'Send the URL to the user. Then run: aiusd login --poll-session <session_id>',
+      message: 'Send the URL to the user. Then run: aiusd-core login --poll-session <session_id>',
     };
     console.log(JSON.stringify(output, null, 2));
     return 'pending';
@@ -735,13 +735,13 @@ export class CLI {
         const data = await resp.json() as { domains: string[] };
         console.log('Available domains:');
         data.domains.forEach((d: string) => console.log(`  - ${d}`));
-        console.log('\nUsage: aiusd guide <domain>');
+        console.log('\nUsage: aiusd-core guide <domain>');
         return;
       }
       const resp = await fetch(`${baseUrl}/api/trade/guides/${domain}`);
       if (!resp.ok) {
         if (resp.status === 404) {
-          logError(`Unknown domain: ${domain}. Run 'aiusd guide' to see available domains.`);
+          logError(`Unknown domain: ${domain}. Run 'aiusd-core guide' to see available domains.`);
         } else {
           logError(`Failed to fetch guide: HTTP ${resp.status}`);
         }

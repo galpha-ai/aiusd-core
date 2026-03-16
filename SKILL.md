@@ -19,7 +19,7 @@ AIUSD Core is a unified trading toolkit that lets agents trade across venues, ma
 
 All commands in this skill use `npx -y aiusd-core` as the CLI prefix. This works without any global installation — npx resolves the package from npm automatically.
 
-If `aiusd` is already in PATH (via `npm install -g aiusd-core`), you may use `aiusd` directly instead.
+If `aiusd-core` is already in PATH (via `npm install -g aiusd-core`), you may use `aiusd-core` directly instead.
 
 **NEVER use `dist/cli.js` — it is a library module, not an entry point.**
 

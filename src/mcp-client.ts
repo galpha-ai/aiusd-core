@@ -70,7 +70,7 @@ export class MCPClient {
       // Create MCP client with capabilities
       this.client = new Client(
         {
-          name: 'aiusd-skills',
+          name: 'aiusd-core',
           version: '1.0.0',
         },
         {
@@ -165,7 +165,7 @@ export class MCPClient {
       return {
         connected: this.connected,
         serverUrl: this.options.serverUrl,
-        client: 'aiusd-skills v1.0.0',
+        client: 'aiusd-core v1.0.0',
       };
     } catch (error) {
       throw new Error(`Failed to get server info: ${error instanceof Error ? error.message : error}`);

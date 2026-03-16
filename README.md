@@ -48,10 +48,10 @@ cd aiusd-core && npm install && npm run build
 ## Quick Start
 
 ```bash
-aiusd login --browser        # Authenticate
-aiusd balances               # Check account balances
-aiusd guide spot             # Get the latest spot trading reference
-aiusd spot buy -b SOL -a 100 # Execute a trade
+aiusd-core login --browser        # Authenticate
+aiusd-core balances               # Check account balances
+aiusd-core guide spot             # Get the latest spot trading reference
+aiusd-core spot buy -b SOL -a 100 # Execute a trade
 ```
 
 ## Capabilities
@@ -65,14 +65,14 @@ aiusd spot buy -b SOL -a 100 # Execute a trade
 | **Monitoring** | Watch signals and set conditional execution rules |
 | **Market Data** | Trending assets, price feeds, holder analytics |
 
-Run `aiusd guide <domain>` before executing commands in any domain to get the latest parameter reference.
+Run `aiusd-core guide <domain>` before executing commands in any domain to get the latest parameter reference.
 
 ## Authentication
 
 ```bash
-aiusd login --browser       # Sign in via browser
-aiusd login --new-wallet    # Create a new account
-aiusd logout                # Sign out
+aiusd-core login --browser       # Sign in via browser
+aiusd-core login --new-wallet    # Create a new account
+aiusd-core logout                # Sign out
 ```
 
 ## Supported Platforms

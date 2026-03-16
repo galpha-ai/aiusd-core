@@ -41,3 +41,20 @@ jobs:
         run: npm publish --access public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create .skill archive
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          SKILL_DIR=$(mktemp -d)
+          cp -r dist src skills scripts package.json package-lock.json tsconfig.json SKILL.md README.md "$SKILL_DIR/"
+          cd "$SKILL_DIR"
+          tar czf /tmp/aiusd-core.skill .
+          echo "VERSION=${VERSION}" >> "$GITHUB_ENV"
+
+      - name: Create GitHub Release
+        run: |
+          gh release create "v${VERSION}" /tmp/aiusd-core.skill \
+            --title "v${VERSION}" \
+            --generate-notes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

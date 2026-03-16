@@ -1,6 +1,6 @@
 {
   "name": "aiusd-core",
-  "version": "2.0.5",
+  "version": "1.0.0",
   "description": "AIUSD Core — trading tools and account management for AI agents via MCP protocol.",
   "main": "dist/index.js",
   "type": "module",
@@ -12,7 +12,7 @@
     "postinstall": "node scripts/skill-init.js"
   },
   "bin": {
-    "aiusd": "./dist/index.js"
+    "aiusd-core": "./dist/index.js"
   },
   "files": [
     "dist/**/*",
