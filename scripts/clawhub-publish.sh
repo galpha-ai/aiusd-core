@@ -13,10 +13,11 @@ cp "$ROOT/SKILL.md" "$TMPDIR/SKILL.md"
 cp -r "$ROOT/skills" "$TMPDIR/skills"
 
 echo "Publishing aiusd-core v${VERSION} to ClawHub..."
-clawhub publish "$TMPDIR" \
+npx -y clawhub publish "$TMPDIR" \
   --slug aiusd-core \
   --name "AIUSD Core" \
   --version "$VERSION" \
-  --tags latest
+  --tags latest \
+  --registry https://www.clawhub.ai
 
 echo "Done."
