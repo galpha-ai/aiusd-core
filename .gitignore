@@ -107,3 +107,5 @@ token.json
 dist/
 scripts/reauth.js
 .claude/settings.local.json
+clawhub-upload/
+clawhub-upload/
